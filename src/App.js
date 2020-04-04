@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NavbarComponent from './containers/Navbar/NavbarComponent';
 import Items from './containers/Items/Items';
 import ConfirmOrder from './containers/ConfirmOrder/ConfirmOrder';
+import ShoppingCart from './containers/ShoppingCart/ShoppingCart';
 import './App.css';
 
 // Import redux provider
@@ -52,6 +53,7 @@ class App extends Component {
         <NavbarComponent></NavbarComponent>
         {/* <Items></Items> */}
         <ConfirmOrder></ConfirmOrder>
+        {/* <ShoppingCart></ShoppingCart> */}
       </div>
     );
   }
