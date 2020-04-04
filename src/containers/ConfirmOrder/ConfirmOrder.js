@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { ButtonGroup, ButtonToolbar, Button, Accordion, Card, Row, Col } from 'react-bootstrap';
-// import { Link } from "react-router-dom";
+import { Accordion, Card, Row, Col } from 'react-bootstrap';
 import './ConfirmOrder.css';
 import OrderSummery from '../../components/OrderSummery/OrderSummery';
 import StoreItems from '../../components/StoreItems/StoreItems';
+import RadioBlock from '../../components/RadioBlock/RadioBlock';
 
 export default class ConfirmOrder extends Component {
     constructor(props, context) {
@@ -27,95 +27,24 @@ export default class ConfirmOrder extends Component {
                                 </Accordion.Toggle>
                                 <Accordion.Collapse eventKey="0">
                                     <Card.Body>
-                                        <div class="radio-block">
-                                            <div class="radio-content">
-                                                <input id="shipping-information-1" type="radio" name="radio" checked />
-                                                <label for="shipping-information-1">
-                                                    <Row>
-                                                        <Col md={2}>
-                                                            <span></span>
-                                                        </Col>
-                                                        <Col md={10}>
-                                                            <div className="label-content">name, phone</div>
-                                                            <div className="label-content">street</div>
-                                                            <div className="label-content">city, country</div>
-                                                            <div className="label-content">
-                                                                <ButtonToolbar aria-label="Toolbar with button groups">
-                                                                    <ButtonGroup className="mr-2" aria-label="First group">
-                                                                        <Button variant="secondary" size="sm">
-                                                                            Edit
-                                                                </Button>
-                                                                    </ButtonGroup>
-                                                                    <ButtonGroup className="mr-2" aria-label="Second group">
-                                                                        <Button variant="secondary" size="sm">
-                                                                            Set as default
-                                                                </Button>
-                                                                    </ButtonGroup>
-                                                                </ButtonToolbar>
-                                                            </div>
-                                                        </Col>
-                                                    </Row>
-                                                </label>
-                                            </div><br />
-                                            <div class="radio-content">
-                                                <input id="shipping-information-2" type="radio" name="radio" checked />
-                                                <label for="shipping-information-2">
-                                                    <Row>
-                                                        <Col md={2}>
-                                                            <span></span>
-                                                        </Col>
-                                                        <Col md={10}>
-                                                            <div className="label-content">name, phone</div>
-                                                            <div className="label-content">street</div>
-                                                            <div className="label-content">city, country</div>
-                                                            <div className="label-content">
-                                                                <ButtonToolbar aria-label="Toolbar with button groups">
-                                                                    <ButtonGroup className="mr-2" aria-label="First group">
-                                                                        <Button variant="secondary" size="sm">
-                                                                            Edit
-                                                                </Button>
-                                                                    </ButtonGroup>
-                                                                    <ButtonGroup className="mr-2" aria-label="Second group">
-                                                                        <Button variant="secondary" size="sm">
-                                                                            Set as default
-                                                                </Button>
-                                                                    </ButtonGroup>
-                                                                </ButtonToolbar>
-                                                            </div>
-                                                        </Col>
-                                                    </Row>
-                                                </label>
-                                            </div><br />
-                                            <div class="radio-content">
-                                                <input id="shipping-information-3" type="radio" name="radio" checked />
-                                                <label for="shipping-information-3">
-                                                    <Row>
-                                                        <Col md={2}>
-                                                            <span></span>
-                                                        </Col>
-                                                        <Col md={10}>
-                                                            <div className="label-content">name, phone</div>
-                                                            <div className="label-content">street</div>
-                                                            <div className="label-content">city, country</div>
-                                                            <div className="label-content">
-                                                                <ButtonToolbar aria-label="Toolbar with button groups">
-                                                                    <ButtonGroup className="mr-2" aria-label="First group">
-                                                                        <Button variant="secondary" size="sm">
-                                                                            Edit
-                                                                </Button>
-                                                                    </ButtonGroup>
-                                                                    <ButtonGroup className="mr-2" aria-label="Second group">
-                                                                        <Button variant="secondary" size="sm">
-                                                                            Set as default
-                                                                </Button>
-                                                                    </ButtonGroup>
-                                                                </ButtonToolbar>
-                                                            </div>
-                                                        </Col>
-                                                    </Row>
-                                                </label>
-                                            </div><br />
-                                        </div>
+                                        <RadioBlock
+                                            contentList={[
+                                                {
+                                                    content: ['name, phone', 'street', 'city, country'],
+                                                    id: 1
+                                                },
+                                                {
+                                                    content: ['name, phone', 'street', 'city, country'],
+                                                    id: 2
+                                                },
+                                                {
+                                                    content: ['name, phone', 'street', 'city, country'],
+                                                    id: 3
+                                                }
+                                            ]}
+                                            name={"shippingInformation"}                                            
+                                        >
+                                        </RadioBlock>
                                     </Card.Body>
                                 </Accordion.Collapse>
                             </Card>
@@ -127,47 +56,24 @@ export default class ConfirmOrder extends Component {
                                 </Accordion.Toggle>
                                 <Accordion.Collapse eventKey="0">
                                     <Card.Body>
-                                        <div class="radio-block">
-                                            <div class="radio-content">
-                                                <input id="visa1" type="radio" name="radio" checked />
-                                                <label for="visa1">
-                                                    <Row>
-                                                        <Col md={2}>
-                                                            <span></span>
-                                                        </Col>
-                                                        <Col md={10}>
-                                                            <div className="visa">VISA **** 1234</div>
-                                                        </Col>
-                                                    </Row>
-                                                </label>
-                                            </div><br />
-                                            <div class="radio-content">
-                                                <input id="visa2" type="radio" name="radio" checked />
-                                                <label for="visa2">
-                                                    <Row>
-                                                        <Col md={2}>
-                                                            <span></span>
-                                                        </Col>
-                                                        <Col md={10}>
-                                                            <div className="visa">VISA **** 1234</div>
-                                                        </Col>
-                                                    </Row>
-                                                </label>
-                                            </div><br />
-                                            <div class="radio-content">
-                                                <input id="visa3" type="radio" name="radio" checked />
-                                                <label for="visa3">
-                                                    <Row>
-                                                        <Col md={2}>
-                                                            <span></span>
-                                                        </Col>
-                                                        <Col md={10}>
-                                                            <div className="visa">VISA **** 1234</div>
-                                                        </Col>
-                                                    </Row>
-                                                </label>
-                                            </div><br />
-                                        </div>
+                                    <RadioBlock
+                                            contentList={[
+                                                {
+                                                    content: ['VISA **** 1234'],
+                                                    id: 4
+                                                },
+                                                {
+                                                    content: ['VISA **** 1234'],
+                                                    id: 5
+                                                },
+                                                {
+                                                    content: ['VISA **** 1234'],
+                                                    id: 6
+                                                }
+                                            ]}
+                                            name={"visa"}                                        
+                                        >
+                                        </RadioBlock>
                                     </Card.Body>
                                 </Accordion.Collapse>
                             </Card>

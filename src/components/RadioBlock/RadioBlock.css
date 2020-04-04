@@ -1,0 +1,44 @@
+
+.radio-content{
+    display:inline-block;
+    text-align: left;
+  }
+  
+  input[type="radio"] {
+    display:none;
+  }
+  
+  input[type="radio"] + label {
+    color:black;
+    cursor:pointer;
+    font-size: 20px;
+  }
+  
+  input[type="radio"] + label span {
+    display:inline-block;
+    width:27px;
+    height:27px;
+    margin:-2px 5px 0 0;
+    vertical-align:middle;
+    border:1px solid #cecece;
+    border-radius: 50%;
+    cursor:pointer;
+    transition: background .2s, transform .2s;
+  }
+  
+  input[type="radio"] + label span:hover,
+  input[type="radio"] + label:hover span{
+    transform: scale(1.2);
+  } 
+  
+  input[type="radio"]:checked + label span {
+    background: #343A40;
+    background: -webkit-linear-gradient(to right, #93F9B9, #1D976C); 
+    background: linear-gradient(to right, #949799, #343A40); 
+    box-shadow: 0px 0px 0px 5px white inset;
+  }
+  
+  input[type="radio"]:checked + label{
+    color: #343A40;
+  }
+  
