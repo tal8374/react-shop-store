@@ -4,6 +4,7 @@ import { Jumbotron, Container, ButtonGroup, ButtonToolbar, Button, Accordion, Ca
 import './ShoppingCart.css';
 import OrderSummery from '../../components/OrderSummery/OrderSummery';
 import StoreItems from '../../components/StoreItems/StoreItems';
+import Checkbox from '../../components/Checkbox/Checkbox';
 
 export default class ShoppingCart extends Component {
     constructor(props, context) {
@@ -23,10 +24,7 @@ export default class ShoppingCart extends Component {
                         <Jumbotron fluid>
                             <Container>
                                 <h1>Shopping Cart (26)</h1>
-                                <form>
-                                    <input type="checkbox" id="fruit1" name="fruit-1" value="Apple"></input>
-                                    <label for="fruit1">Select all</label>
-                                </form>
+                                <Checkbox id="all" label="Select All"></Checkbox>
                             </Container>
                         </Jumbotron>
                         <StoreItems></StoreItems>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card, Row, Col } from 'react-bootstrap';
-// import { Link } from "react-router-dom";
+import Checkbox from '../Checkbox/Checkbox';
 
 export default class StoreItems extends Component {
     constructor(props, context) {
@@ -17,7 +17,10 @@ export default class StoreItems extends Component {
                 <Card>
                     <Card.Header>Tal 777 Store</Card.Header>
                     <Card.Body>
-                        <Card.Title>Item #1</Card.Title>
+                        <Row>
+                            <Checkbox id="1"></Checkbox>
+                            <Card.Title>Item #1</Card.Title>
+                        </Row>
                         <Card.Text>
                             <Row>
                                 <Col md={3}>
@@ -44,7 +47,10 @@ export default class StoreItems extends Component {
                             </Row>
                         </Card.Text>
                         <hr />
-                        <Card.Title>Item #2</Card.Title>
+                        <Row>
+                            <Checkbox id="2"></Checkbox>
+                            <Card.Title>Item #2</Card.Title>
+                        </Row>
                         <Card.Text>
                             <Row>
                                 <Col md={3}>
@@ -75,7 +81,10 @@ export default class StoreItems extends Component {
                 <Card>
                     <Card.Header>sanhe 888 Store</Card.Header>
                     <Card.Body>
-                        <Card.Title>Item #1</Card.Title>
+                        <Row>
+                            <Checkbox id="3"></Checkbox>
+                            <Card.Title>Item #1</Card.Title>
+                        </Row>
                         <Card.Text>
                             <Row>
                                 <Col md={3}>
@@ -102,7 +111,10 @@ export default class StoreItems extends Component {
                             </Row>
                         </Card.Text>
                         <hr />
-                        <Card.Title>Item #2</Card.Title>
+                        <Row>
+                            <Checkbox id="4"></Checkbox>
+                            <Card.Title>Item #2</Card.Title>
+                        </Row>
                         <Card.Text>
                             <Row>
                                 <Col md={3}>
