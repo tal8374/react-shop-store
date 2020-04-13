@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Item from '../../components/Item/Item';
-import { CardGroup, Container, Row, Col } from 'react-bootstrap';
-// import { Link } from "react-router-dom";
-import './items.css';
+import { CardGroup, Row, Col } from 'react-bootstrap';
+import itemsStyle from './Items.module.css';
 
 export default class Items extends Component {
     constructor(props, context) {
@@ -17,8 +16,8 @@ export default class Items extends Component {
 
         return (
             <CardGroup>
-                <div class="card-group-container">
-                    <Row className="items-row">
+                <div className={itemsStyle.cardGroupContainer}>
+                    <Row className={itemsStyle.itemsRow}>
                         <Col xs={12} sm={6} md={4} lg={3}>
                             <Item></Item>
                         </Col>
@@ -32,7 +31,7 @@ export default class Items extends Component {
                             <Item></Item>
                         </Col>
                     </Row>
-                    <Row className='items-row'>
+                    <Row className={itemsStyle.itemsRow}>
                         <Col xs={12} sm={6} md={4} lg={3}>
                             <Item></Item>
                         </Col>

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Jumbotron, Container, ButtonGroup, ButtonToolbar, Button, Accordion, Card, Row, Col } from 'react-bootstrap';
-// import { Link } from "react-router-dom";
-import './ShoppingCart.css';
+import ShoppingCartStyles from './ShoppingCart.module.css';
 import OrderSummery from '../../components/OrderSummery/OrderSummery';
 import StoreItems from '../../components/StoreItems/StoreItems';
 import Checkbox from '../../components/Checkbox/Checkbox';
@@ -29,7 +28,7 @@ export default class ShoppingCart extends Component {
                         </Jumbotron>
                         <StoreItems></StoreItems>
                     </Col>
-                    <Col md={{ span: 4 }} className="space-down">
+                    <Col md={{ span: 4 }} className={ShoppingCartStyles.spaceDown}>
                         <Row>
                             <OrderSummery></OrderSummery>
                         </Row>

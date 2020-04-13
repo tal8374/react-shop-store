@@ -1,0 +1,40 @@
+.checkbox + .label {
+    display: block;
+    cursor: pointer;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox + .label:before {
+    content: "\2714";
+    border: 0.1em solid #343A40;
+    border-radius: 0.2em;
+    display: inline-block;
+    margin-right: 0.8em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+}
+
+.checkbox + .label:active:before {
+    transform: scale(0);
+}
+
+.checkbox:checked + .label:before {
+    background-color: #343A40;
+    border-color: #343A40;
+    color: #fff;
+}
+
+.checkbox:disabled + .label:before {
+    transform: scale(1);
+    border-color: #aaa;
+}
+
+.checkbox:checked:disabled + .label:before {
+    transform: scale(1);
+    background-color: #bfb;
+    border-color: #bfb;
+}

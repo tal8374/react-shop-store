@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+.spaceDown {
+  margin-bottom: 1%;
+}
+
+.cardHeader {
+  cursor: pointer;
+}

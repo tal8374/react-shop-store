@@ -3,7 +3,7 @@ import NavbarComponent from './containers/Navbar/NavbarComponent';
 import Items from './containers/Items/Items';
 import ConfirmOrder from './containers/ConfirmOrder/ConfirmOrder';
 import ShoppingCart from './containers/ShoppingCart/ShoppingCart';
-import './App.css';
+import Register from './containers/Register/Register';
 
 // Import redux provider
 import { connect } from 'react-redux';
@@ -52,8 +52,9 @@ class App extends Component {
       <div>
         <NavbarComponent></NavbarComponent>
         {/* <Items></Items> */}
-        <ConfirmOrder></ConfirmOrder>
+        {/* <ConfirmOrder></ConfirmOrder> */}
         {/* <ShoppingCart></ShoppingCart> */}
+        <Register></Register>
       </div>
     );
   }

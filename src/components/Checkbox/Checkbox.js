@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Checkbox.css';
+import checkbox from './checkbox.module.css';
 
 export default class Checkbox extends Component {
     constructor(props, context) {
@@ -13,9 +13,9 @@ export default class Checkbox extends Component {
 
     render() {
         return (
-            <form className="checkbox-form">
-                <input className="checkbox-form" type="checkbox" id={this.state.id} name={this.state.id} value={this.state.id}></input>
-                {<label className="checkbox-form" for={this.state.id}>{this.state.label == null ? '' : this.state.label}</label>}
+            <form >
+                <input  className={checkbox.checkbox} type="checkbox" id={this.state.id} name={this.state.id} value={this.state.id}></input>
+                {<label className={checkbox.label} for={this.state.id}>{this.state.label == null ? '' : this.state.label}</label>}
             </form>
         )
     }

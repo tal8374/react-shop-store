@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Accordion, Card, Row, Col } from 'react-bootstrap';
-import './ConfirmOrder.css';
+import styles from './ConfirmOrder.module.css';
 import OrderSummery from '../../components/OrderSummery/OrderSummery';
 import StoreItems from '../../components/StoreItems/StoreItems';
 import RadioBlock from '../../components/RadioBlock/RadioBlock';
@@ -17,12 +17,12 @@ export default class ConfirmOrder extends Component {
     render() {
 
         return (
-            <div className="container">
+            <div className='container'>
                 <Row>
                     <Col md={{ span: 8 }}>
                         <Accordion defaultActiveKey="0">
                             <Card>
-                                <Accordion.Toggle as={Card.Header} eventKey="0" className="card-header">
+                                <Accordion.Toggle as={Card.Header} eventKey="0" className={styles.cardHeader}>
                                     <h3>Shipping Information</h3>
                                 </Accordion.Toggle>
                                 <Accordion.Collapse eventKey="0">
@@ -51,7 +51,7 @@ export default class ConfirmOrder extends Component {
                         </Accordion>
                         <Accordion defaultActiveKey="0">
                             <Card>
-                                <Accordion.Toggle as={Card.Header} eventKey="0" className="card-header">
+                                <Accordion.Toggle as={Card.Header} eventKey="0" className={styles.cardHeader}>
                                     <h3>Payment Methods</h3>
                                 </Accordion.Toggle>
                                 <Accordion.Collapse eventKey="0">
@@ -79,7 +79,7 @@ export default class ConfirmOrder extends Component {
                             </Card>
                         </Accordion>
                         <Accordion defaultActiveKey="0">
-                                <Accordion.Toggle as={Card.Header} eventKey="0" className="card-header">
+                                <Accordion.Toggle as={Card.Header} eventKey="0" className={styles.cardHeader}>
                                     <h3>Order Review</h3>
                                 </Accordion.Toggle>
                                 <Accordion.Collapse eventKey="0">
@@ -87,7 +87,7 @@ export default class ConfirmOrder extends Component {
                                 </Accordion.Collapse>
                         </Accordion>
                     </Col>
-                    <Col md={{ span: 4 }} className="space-down">
+                    <Col md={{ span: 4 }} className={styles.spaceDown}>
                         <Row>
                             <OrderSummery></OrderSummery>
                         </Row>

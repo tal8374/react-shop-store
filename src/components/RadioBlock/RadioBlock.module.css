@@ -1,20 +1,20 @@
 
-.radio-content{
+.radioContent{
     display:inline-block;
     text-align: left;
   }
   
-  input[type="radio"] {
+.radio {
     display:none;
   }
   
-  input[type="radio"] + label {
+.radio + .label {
     color:black;
     cursor:pointer;
     font-size: 20px;
   }
   
-  input[type="radio"] + label span {
+.radio + .label .span {
     display:inline-block;
     width:27px;
     height:27px;
@@ -26,19 +26,19 @@
     transition: background .2s, transform .2s;
   }
   
-  input[type="radio"] + label span:hover,
-  input[type="radio"] + label:hover span{
+.radio + .label .span:hover,
+.radio + .label:hover .span{
     transform: scale(1.2);
   } 
   
-  input[type="radio"]:checked + label span {
+.radio:checked + .label .span {
     background: #343A40;
     background: -webkit-linear-gradient(to right, #93F9B9, #1D976C); 
     background: linear-gradient(to right, #949799, #343A40); 
     box-shadow: 0px 0px 0px 5px white inset;
   }
   
-  input[type="radio"]:checked + label{
+.radio:checked + .label{
     color: #343A40;
   }
   
