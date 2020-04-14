@@ -4,6 +4,7 @@ import Items from './containers/Items/Items';
 import ConfirmOrder from './containers/ConfirmOrder/ConfirmOrder';
 import ShoppingCart from './containers/ShoppingCart/ShoppingCart';
 import Register from './containers/Register/Register';
+import Login from './containers/Login/Login';
 
 // Import redux provider
 import { connect } from 'react-redux';
@@ -54,7 +55,8 @@ class App extends Component {
         {/* <Items></Items> */}
         {/* <ConfirmOrder></ConfirmOrder> */}
         {/* <ShoppingCart></ShoppingCart> */}
-        <Register></Register>
+        {/* <Register></Register> */}
+        <Login></Login>
       </div>
     );
   }
