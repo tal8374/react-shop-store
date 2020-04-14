@@ -52,11 +52,11 @@ class App extends Component {
     return (
       <div>
         <NavbarComponent></NavbarComponent>
-        {/* <Items></Items> */}
+        <Items></Items>
         {/* <ConfirmOrder></ConfirmOrder> */}
         {/* <ShoppingCart></ShoppingCart> */}
         {/* <Register></Register> */}
-        <Login></Login>
+        {/* <Login></Login> */}
       </div>
     );
   }
