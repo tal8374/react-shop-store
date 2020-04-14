@@ -1,0 +1,32 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 1% 0;
+}
+
+.paginationItem {
+    margin: 0 .2%;
+}
+
+.pagination>li>a {
+    background-color: white;
+    color: #5A4181;
+}
+
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+    color: #5a5a5a;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.paginationItem span {
+    color: white;
+    background-color: #343A40 !Important;
+    border: solid 1px #5A4181 !Important;
+}
+
+.paginationItem:hover span {
+    background-color: rgb(112, 115, 117) !Important;
+    border: solid 1px #5A4181;
+    cursor: pointer;
+}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import NavbarComponent from './containers/Navbar/NavbarComponent';
-import Items from './containers/Items/Items';
+import ItemsPage from './containers/ItemsPage/ItemsPage';
 import ConfirmOrder from './containers/ConfirmOrder/ConfirmOrder';
 import ShoppingCart from './containers/ShoppingCart/ShoppingCart';
 import Register from './containers/Register/Register';
@@ -52,7 +52,7 @@ class App extends Component {
     return (
       <div>
         <NavbarComponent></NavbarComponent>
-        <Items></Items>
+        <ItemsPage></ItemsPage>
         {/* <ConfirmOrder></ConfirmOrder> */}
         {/* <ShoppingCart></ShoppingCart> */}
         {/* <Register></Register> */}
